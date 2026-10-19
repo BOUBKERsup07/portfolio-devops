@@ -2,14 +2,18 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Étudiant DevOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boubker CHEYOUKH | Data & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="entete">
-    <nav class="menu">
-      <a class="logo" href="#accueil">Mon&nbsp;Portfolio</a>
+
+  <header class="nav">
+    <a class="logo" href="#accueil"><span class="logo-badge">BC</span><span class="logo-name">Boubker Cheyoukh</span></a>
+    <nav>
       <ul>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
@@ -21,53 +25,90 @@
 
   <main>
     <section id="accueil" class="hero">
-      <h1>Bonjour, je suis <span>Prénom Nom</span></h1>
-      <span class="badge">Version 2</span>
-      <p>Élève ingénieur en Génie Informatique — passionné par le DevOps et le Cloud.</p>
-      <a class="bouton" href="#projets">Voir mes projets</a>
+      <div class="hero-top">
+        <p class="roles"><span>Data</span><span>IA</span><span>Full Stack</span></p>
+        <p class="hero-desc">Élève ingénieur en Génie Informatique et Intelligence Artificielle à HESTIM. Je transforme les données en systèmes intelligents, du modèle jusqu'au déploiement.</p>
+      </div>
+      <h1 class="hero-name"><span>Boubker</span><span>Cheyoukh</span></h1>
+      <p class="scroll-cue">Défiler pour entrer</p>
     </section>
 
-    <section id="apropos" class="bloc">
-      <h2>À propos</h2>
-      <p>J'apprends à livrer des applications de façon fiable et automatisée :
-         versionnement avec Git, conteneurisation avec Docker et intégration continue avec GitHub Actions.</p>
-    </section>
-
-    <section id="competences" class="bloc">
-      <h2>Compétences techniques</h2>
-      <ul class="cartes">
-        <li>HTML &amp; CSS</li>
-        <li>Git &amp; GitHub</li>
-        <li>Docker &amp; Nginx</li>
-        <li>Docker Compose</li>
-        <li>GitHub Actions</li>
-        <li>Linux</li>
-        <li>Kubernetes (notions)</li>
-      </ul>
-    </section>
-
-    <section id="projets" class="bloc">
-      <h2>Projets réalisés</h2>
-      <div class="projets">
-        <article class="projet">
-          <h3>Portfolio conteneurisé</h3>
-          <p>Ce site, servi par Nginx dans un conteneur Docker.</p>
-        </article>
-        <article class="projet">
-          <h3>Pipeline CI/CD</h3>
-          <p>Tests automatiques, image Docker et déploiement sur GitHub Pages à chaque push.</p>
-        </article>
+    <section class="marquee" aria-label="Domaines">
+      <div class="track">
+        <span>Machine Learning</span><i></i><span>Data Engineering</span><i></i><span>Full Stack</span><i></i><span>IoT &amp; Edge AI</span><i></i><span>DevOps</span><i></i>
+        <span>Machine Learning</span><i></i><span>Data Engineering</span><i></i><span>Full Stack</span><i></i><span>IoT &amp; Edge AI</span><i></i><span>DevOps</span><i></i>
       </div>
     </section>
 
-    <section id="contact" class="bloc">
-      <h2>Contact</h2>
-      <p>Écrivez-moi : <a href="mailto:prenom.nom@exemple.ma">prenom.nom@exemple.ma</a></p>
+    <section id="apropos" class="bloc">
+      <div class="grid">
+        <div>
+          <p class="eyebrow">À propos</p>
+          <h2 class="reveal">Passionné par la donnée et l'IA.</h2>
+          <p class="lead reveal">Élève en 4<sup>e</sup> année du cycle Ingénieur d'État, je me forme à l'intelligence artificielle, au machine learning, ainsi qu'aux fondamentaux de la cybersécurité et de la cryptographie. Je mets mes compétences en Python, Java et analyse de données au service de projets à forte valeur ajoutée.</p>
+        </div>
+        <ul class="timeline">
+          <li class="reveal"><span class="num">01</span><div><h3>Ingénieur d'État, Génie Informatique (IA)</h3><p>HESTIM, Casablanca. En cours.</p></div></li>
+          <li class="reveal"><span class="num">02</span><div><h3>Stagiaire développement logiciel, ATM VIEW</h3><p>Juin à août 2025. Cash Management et modules métiers en C# (.NET).</p></div></li>
+          <li class="reveal"><span class="num">03</span><div><h3>Licence Pro Développement Internet &amp; Mobile</h3><p>ULCO, double diplomation avec SupTechnologie. Mention Très Bien.</p></div></li>
+          <li class="reveal"><span class="num">04</span><div><h3>Développeur freelance</h3><p>Gestion de salle de sport (2025) et plateforme de restaurant en Java EE (2024).</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="competences" class="bloc">
+      <p class="eyebrow">Compétences</p>
+      <h2 class="reveal">Une boîte à outils complète.</h2>
+      <dl class="skills">
+        <div class="reveal"><dt>Langages</dt><dd>Java, Python, JavaScript, PHP, Kotlin</dd></div>
+        <div class="reveal"><dt>IA &amp; Data Science</dt><dd>K-means, régression, classification, NLP, Pandas, NumPy, LLM / RAG</dd></div>
+        <div class="reveal"><dt>Bases de données</dt><dd>MySQL, PostgreSQL, SQL Server, SQLite, Firebase</dd></div>
+        <div class="reveal"><dt>Data &amp; BI</dt><dd>Power BI, SSIS, SSAS, Data Warehouse (OLAP)</dd></div>
+        <div class="reveal"><dt>Outils</dt><dd>Git, Docker, GitHub Actions, REST API, MVC, WebRTC</dd></div>
+        <div class="reveal"><dt>Certifications</dt><dd>IBM (Machine Learning, Python, EDA), Huawei HCIA Cloud, Cisco CCNA 1 &amp; 2</dd></div>
+      </dl>
+    </section>
+
+    <section id="projets" class="bloc">
+      <p class="eyebrow">Projets sélectionnés</p>
+      <h2 class="reveal">Le travail qui compte.</h2>
+      <ul class="projects">
+        <li class="card reveal"><span class="year">IA · Agents</span><h3>MultiAgents Medical Diagnostic</h3><p>Système multi-agents de diagnostic médical avec orchestration LangGraph, validation humaine et rapports PDF.</p><p class="stack">LangGraph · FastAPI · Angular · MCP</p></li>
+        <li class="card reveal"><span class="year">IoT · Edge AI</span><h3>PerfuSafe</h3><p>Détection d'anomalies en temps réel sur des données de perfusion, déployée sur Raspberry Pi.</p><p class="stack">Python · FastAPI · scikit-learn · MQTT</p></li>
+        <li class="card reveal"><span class="year">Data · BI</span><h3>Data Warehouse hospitalier</h3><p>Entrepôt de données, modélisation OLAP et tableaux de bord décisionnels.</p><p class="stack">SQL Server · SSIS · SSAS · Power BI</p></li>
+        <li class="card reveal"><span class="year">Data · Séries temporelles</span><h3>Analyse &amp; prévision énergétique</h3><p>Modélisation de la consommation et détection d'anomalies (démarche CRISP-DM).</p><p class="stack">Prophet · Isolation Forest · pandas</p></li>
+        <li class="card reveal"><span class="year">Web · IA</span><h3>ShadowDay</h3><p>Plateforme d'immersion professionnelle avec mise en relation intelligente et visioconférence temps réel.</p><p class="stack">Express.js · React · PostgreSQL · WebRTC</p></li>
+        <li class="card reveal"><span class="year">Mobile</span><h3>Rakeb</h3><p>Application de covoiturage avec suivi GPS et interaction en temps réel.</p><p class="stack">Flutter · Firebase</p></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="bloc contact">
+      <p class="eyebrow">Travaillons ensemble</p>
+      <h2 class="reveal">Un projet data ou IA en tête ?</h2>
+      <a class="mail" href="mailto:b.cheyoukh@hestim.ma">b.cheyoukh@hestim.ma <em>↗</em></a>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/boubker-cheyoukh-4696a4276/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+        <li><a href="https://suptechboubker.github.io/PORTFOLIO/" target="_blank" rel="noreferrer noopener">Portfolio</a></li>
+      </ul>
     </section>
   </main>
 
-  <footer class="pied">
+  <footer class="footer">
+    <p class="sign">Boubker Cheyoukh</p>
     <p>© 2026 — Portfolio réalisé pendant l'atelier DevOps · Version 2</p>
   </footer>
+
+  <script>
+    // Apparition au défilement (une seule fois)
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    });
+    document.querySelectorAll(".reveal").forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 90 + "ms";
+      io.observe(el);
+    });
+  </script>
 </body>
 </html>
